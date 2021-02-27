@@ -1,4 +1,4 @@
-package com.react-native-base;
+package com.reactnativebase;
 
 import com.facebook.react.ReactActivity;
 
