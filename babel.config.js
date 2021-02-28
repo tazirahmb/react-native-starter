@@ -9,6 +9,7 @@ module.exports = {
       'module-resolver',
       {
         root: ['./src'],
+        extensions: ['.ios.js', '.android.js', '.js', '.json'],
         alias: {
           '@elements': './components/elements',
           '@forms': './components/forms',
