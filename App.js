@@ -11,11 +11,13 @@ import { ROUTES } from './src/configs';
 import { NavigationContainer } from '@react-navigation/native';
 // import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { APP_NAME } from '@env';
 
 const Tab = createBottomTabNavigator();
 
 // const Stack = createStackNavigator();
 const App = () => {
+  console.log(APP_NAME);
   return (
     <NavigationContainer>
       <Tab.Navigator>
