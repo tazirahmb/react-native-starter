@@ -67,7 +67,6 @@
   "lint-staged": {
     "src/**/*.js": [
       "prettier --write",
-      "git add",
       "npm run lint",
       "npm run test:commit"
     ]

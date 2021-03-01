@@ -14,7 +14,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 // const Tab = createBottomTabNavigator();
 
-// const Stack = createStackNavigator();
+const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
