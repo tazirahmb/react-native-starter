@@ -12,9 +12,9 @@ import { NavigationContainer } from '@react-navigation/native';
 // import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-// const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 
-const Stack = createStackNavigator();
+// const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>

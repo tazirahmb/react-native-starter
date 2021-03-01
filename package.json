@@ -13,7 +13,7 @@
     "stage": "npm run env:stage && react-native start",
     "prod": "npm run env:prod && react-native start",
     "test": "jest",
-    "test:commit": "jest --u --i --silent",
+    "test:commit": "jest --u --i --silent --passWithNoTests",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -61,14 +61,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && npm run lint && npm run test:commit"
     }
   },
   "lint-staged": {
     "*.js": [
-      "prettier --write",
-      "npm run lint",
-      "npm run test:commit"
+      "prettier --write"
     ]
   }
 }
