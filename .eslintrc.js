@@ -85,7 +85,7 @@ module.exports = {
     'react/jsx-no-bind': 0,
     'react/jsx-no-duplicate-props': 2,
     'react/jsx-no-literals': 0,
-    'react/jsx-no-undef': 1,
+    'react/jsx-no-undef': 2,
     'react/jsx-pascal-case': 1,
     'react/jsx-sort-prop-types': 0,
     'react/jsx-sort-props': [
