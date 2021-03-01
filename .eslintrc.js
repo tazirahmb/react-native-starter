@@ -62,7 +62,7 @@ module.exports = {
     'no-lone-blocks': 0,
     'jsx-quotes': 1,
     'no-unused-vars': 2,
-    'import/no-unresolved': 2,
+    'import/no-unresolved': [2, { ignore: ['@env'] }],
     'no-undef': 2,
     'react/display-name': [
       1,
