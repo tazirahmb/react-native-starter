@@ -13,7 +13,9 @@
     "stage": "npm run env:stage && react-native start",
     "prod": "npm run env:prod && react-native start",
     "test": "jest --u --i",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
@@ -54,23 +56,17 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-native": "^3.10.0",
     "eslint-watch": "^7.0.0",
-    "husky": "4.2.3",
+    "husky": "^5.1.3",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
     "metro-react-native-babel-preset": "^0.65.1",
     "prettier": "^2.2.1",
     "react-test-renderer": "16.13.1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.js": [
       "prettier --write",
-      "npm run lint --quiet",
-      "npm run test --silent --passWithNoTests"
+      "npm run lint --quiet"
     ]
   }
 }
